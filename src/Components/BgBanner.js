@@ -1,5 +1,6 @@
 import React from 'react'
 import banner1 from '../Images/banner1.jpg'
+import banner2 from '../Images/banner2.jpg'
 
 function BgBanner() {
   return (
@@ -9,7 +10,7 @@ function BgBanner() {
       <img src={banner1} class="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
     </div>
     <div class="carousel-item active">
-      <img src={banner1} class="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
+      <img src={banner2} class="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
     </div>
     <div class="carousel-item active">
       <img src={banner1} class="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>

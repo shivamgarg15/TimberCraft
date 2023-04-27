@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap');
+
 .fColumn{
     margin-top: 30px;
 }
@@ -10,4 +12,46 @@
     font-weight: bold;
     font-size: 25px;
     color: #c76722;
+}
+
+.stickyNav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    box-shadow: 0px -35px 40px 1px black;
+}
+
+.onePageComponent{
+    min-height: calc(100vh - 56px);
+}
+
+.height-inherit{
+    height: inherit;
+}
+
+.body1Column{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+    /* align-items: flex-start; */
+}
+
+.body1Column div{
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.body1Column p{
+    padding: 15px 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.body1Column a{
+    align-self: flex-start;    
+}
+
+.body1Column img{
+    width: 100%;
 }

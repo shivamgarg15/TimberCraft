@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap');
 
 /* navbar css */
-.container-fluid{
+.custom-Fluid{
     background-color: #222;
     padding: 10px 13px;
     margin: -8px 0px;
 }
 
-.navbar-brand{
+.custom-Brand{
     color: white;
 }
 
-.nav-link{
+
+.custom-Link{
     color: white;
 }
-
 
 
 
@@ -52,7 +52,7 @@
  
 }
 .text-center{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .stickyNav{

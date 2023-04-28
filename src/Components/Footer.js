@@ -3,9 +3,9 @@ import React from 'react'
 function Footer() {
     return (
         <footer>
-            <div class="container text-center" style={{marginTop : "35px"}}>
-                <div class="row">
-                    <div class="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
+            <div className="container text-center" style={{marginTop : "35px"}}>
+                <div className="row">
+                    <div className="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
                         <div className='fHead'>Contact Us</div>
                         <div className='fColumn'>
                             <div>
@@ -19,10 +19,10 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div class="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
+                    <div className="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
                     <div className='fHead'>TimberCraft</div>
                     </div>
-                    <div class="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
+                    <div className="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
                         <div className='fHead'>Keep in Touch</div>
                     </div>
                 </div>

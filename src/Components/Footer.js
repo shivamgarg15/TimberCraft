@@ -1,28 +1,29 @@
 import React from 'react'
+import Fbg1 from "../Images/Fbg1.jpg"
 
 function Footer() {
     return (
-        <footer>
+        <footer className='Fbg1'>
             <div class="container text-center" style={{marginTop : "35px"}}>
                 <div class="row">
-                    <div class="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
+                    <div class="col m-3" style={{ backgroundColor: "#371d0647", height: "300px", borderRadius: "9px" }}>
                         <div className='fHead'>Contact Us</div>
                         <div className='fColumn'>
                             <div>
-                                Address
+                                Address: SHAHDARA, DELHI
                             </div>
                             <div>
-                                Email
+                                Email: djenterprises@gmail.com
                             </div>
                             <div>
-                                Phone
+                                Phone: 9971354050
                             </div>
                         </div>
                     </div>
-                    <div class="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
+                    <div class="col m-3" style={{ backgroundColor: "#371d0647", height: "300px", borderRadius: "9px" }}>
                     <div className='fHead'>TimberCraft</div>
                     </div>
-                    <div class="col m-3" style={{ backgroundColor: "azure", height: "300px", borderRadius: "9px" }}>
+                    <div class="col m-3" style={{ backgroundColor: "#371d0647", height: "300px", borderRadius: "9px" }}>
                         <div className='fHead'>Keep in Touch</div>
                     </div>
                 </div>

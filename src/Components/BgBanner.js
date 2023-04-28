@@ -9,13 +9,8 @@ function BgBanner() {
     <div className="carousel-item active">
       <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
     </div>
-<<<<<<< HEAD
-    <div class="carousel-item active">
-      <img src={banner2} class="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
-=======
     <div className="carousel-item active">
       <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
->>>>>>> 00efa63d99261483b55892a8d688a34b15497513
     </div>
     <div className="carousel-item active">
       <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>

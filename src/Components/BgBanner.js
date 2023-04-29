@@ -7,13 +7,13 @@ function BgBanner() {
     <div id="carouselExample" className="carousel slide">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
+      <img src={banner1} className="d-block w-100 brightness-mid" alt="..." style={{height: "calc(100vh - 56px"}}/>
     </div>
     <div className="carousel-item active">
-      <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
+      <img src={banner2} className="d-block w-100 brightness-mid" alt="..." style={{height: "calc(100vh - 56px"}}/>
     </div>
     <div className="carousel-item active">
-      <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px"}}/>
+      <img src={banner1} className="d-block w-100 brightness-mid" alt="..." style={{height: "calc(100vh - 56px"}}/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap');
 
-/* navbar css */
-.custom-Fluid{
-    background-color: #222;
-    padding: 10px 13px;
-    margin: -8px 0px;
-}
-
-.custom-Brand{
-    color: white;
-}
-
-
-.custom-Link{
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-/* footer css */
-
 
 .fColumn{
     margin-top: 30px;
@@ -54,11 +27,21 @@
 }
 
 .stickyNav{
+    background-color: #854848;
     position: sticky;
     top: 0px;
     left: 0px;
     z-index: 2;
     box-shadow: 0px -35px 40px 1px black;
+}
+
+.hoverNavbar:hover{
+    background-color: #df7878;
+    transition: 1s all ease-in-out;
+}
+
+.hoverNavbar{
+    border-radius: 2px;
 }
 
 .onePageComponent{
@@ -110,6 +93,13 @@
 .body1Column img:hover{    
     transform: scale(1.5);
 }
+
+
+.brightness-mid{
+    filter: brightness(0.6);
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 450px) {
     

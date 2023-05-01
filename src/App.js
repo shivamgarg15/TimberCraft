@@ -3,6 +3,7 @@ import BgBanner from './Components/BgBanner';
 import Body1 from './Components/Body1';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import About from './Components/About';
 import React from "react";
 import {
   HashRouter as Router,
@@ -18,6 +19,7 @@ function App() {
       <Routes >
         <Route exact path='/' element={<><BgBanner/><Body1/></>}/>
         <Route exact path='/home' element={<><BgBanner/><Body1/></>}/>
+        <Route exact path='/About' element={<About/>}/>
       </Routes>
       <Footer />
     </Router>

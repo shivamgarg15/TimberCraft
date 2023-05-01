@@ -26,9 +26,6 @@
     color: white;
 
 }
-.text-center{
-    color: rgb(0, 0, 0);
-}
 
 .stickyNav {
     background-color: #854848;
@@ -129,6 +126,13 @@
     font-size: 22px;
 }
 
+.social-media{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: white;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 450px) {
@@ -143,50 +147,3 @@
         height: 200px;
     }
 }
-
-
-
-/* about us css  */
-
-.A-container{
-    display: block;
-    align-self: center;
-    color: blueviolet;
-
-}
-.A-container h1{
-    color: burlywood;
-    font-size: 2rem;
-}
-.A-container p{
-    align-items: center;
-    color: black;
-}
-
-
-
-
-.A-Grid{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
-.A-card {
-    flex: 0 0 200px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  } 
-
-  .A-card .A-text {
-    padding: 0 20px 20px;
-  }
-
-  .A-card .A-text > button {
-    background: gray;
-    border: 0;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    }

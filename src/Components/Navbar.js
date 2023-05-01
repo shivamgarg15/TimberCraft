@@ -5,9 +5,9 @@ import {
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg stickyNav" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg stickyNav primary-font" data-bs-theme="dark">
   <div className="container-fluid custom-Fluid">
-    <Link className="navbar-brand custom-Brand"  to="/">TimbercRAFT</Link>
+    <Link className="navbar-brand custom-Brand primary-font"  to="/" style={{textShadow: "3px 3px 2px black"}}>TimbercRAFT</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

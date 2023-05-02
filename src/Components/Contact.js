@@ -33,7 +33,7 @@ function Contact() {
           </div>
           <button type="submit" className="btn btn-primary" style={{backgroundColor: "#9d1b1b"}}>Submit</button>
         </form>
-        <iframe className='py-4' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.54114895526!2d77.28729970956877!3d28.673454682122294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb7f015725d1%3A0x502708cd8cd40e51!2sShahdara!5e0!3m2!1sen!2sin!4v1682873813182!5m2!1sen!2sin" width="100%" height="400" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='shop'></iframe>
+        <iframe className='py-4' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.54114895526!2d77.28729970956877!3d28.673454682122294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb7f015725d1%3A0x502708cd8cd40e51!2sShahdara!5e0!3m2!1sen!2sin!4v1682873813182!5m2!1sen!2sin" width="100%" height="400" style={{border:"0"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='shop'></iframe>
       </div>
     </div>
   )

@@ -26,7 +26,7 @@ function Footer() {
                         <div className='fHead'>Keep in Touch</div>
                     </div>
                 </div>
-                <p className='text-center'>Copyright © 2023 TimberCraft Co. All rights reserved.</p>
+                <div className='text-center pb-2'>Copyright © 2023 TimberCraft Co. All rights reserved.</div>
             </div>
         </footer>
     )

@@ -2,8 +2,9 @@ import React from 'react'
 import {
   Link
 } from "react-router-dom";
+import scrollTop from '../Images/scrollTop.png'
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg stickyNav primary-font" data-bs-theme="dark">
   <div className="container-fluid custom-Fluid">
@@ -28,6 +29,7 @@ function Navbar() {
       </ul>
     </div>
   </div>
+  <img src={scrollTop} alt='' className='scrollTop' onClick={props.scrollToTop}></img>
 </nav>
   )
 }

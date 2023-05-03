@@ -14,9 +14,14 @@ import {
 
 
 function App() {
+
+  const scrollToTop = ()=>{
+    window.scrollTo({top: 0, behavior: "smooth"})
+  }
+
   return (
     <Router>
-      <Navbar />
+      <Navbar scrollToTop={scrollToTop}/>
       <Routes >
         <Route exact path='/' element={<><BgBanner/><Body1/></>}/>
         <Route exact path='/home' element={<><BgBanner/><Body1/></>}/>

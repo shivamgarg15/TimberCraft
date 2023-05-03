@@ -3,11 +3,13 @@ import {
     Link
   } from "react-router-dom";
 import body1 from '../Images/body1.jpg'
+import Fade from 'react-reveal/Fade';
 
 function Body1() {
     return (
         <div className='onePageComponent primary-font' style={{ backgroundColor: "rgb(228 213 192 /61%)", display: "flex", alignItems: "center", padding: "20px 0px", boxSizing: "content-box", flexDirection: "column", justifyContent: "center"}}>
             {/* <div>Fullfilling your dream</div> */}
+            <Fade left duration={1500}>
             <div className="container text-center height-inherit boxShadow" style={{width: "90%"}}>
                 <div className="row justify-content-center height-inherit">
                     <div className="col-12 col-md-4 col-lg-3 mx-4 my-3 body1Column">
@@ -27,6 +29,7 @@ function Body1() {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     )
 }

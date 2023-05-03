@@ -1,8 +1,10 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade';
 
 function About() {
   return (
     <div className='py-5' style={{ backgroundColor: "rgb(228 213 192 /61%)" }}>
+      <Fade left delay={200} duration={1500}>
       <div className='container boxShadow body1Column' style={{ width: "90%" }}>
         <h1 className='text-center'>About Us</h1>
         <p>
@@ -19,7 +21,9 @@ function About() {
           Thank you for choosing our store for your furniture needs. We are excited to be a part of your home decor journey!
         </p>
       </div>
+      </Fade>
 
+    <Fade right duration={1500}>
       <div className='container boxShadow body1Column my-5' style={{ width: "90%" }}>
         <h1 className='text-center'>Brand story</h1>
         <p>
@@ -36,11 +40,13 @@ function About() {
           Thank you for choosing our brand. We hope that our furniture brings you joy and comfort for many years to come.
         </p>
       </div>
+      </Fade>
 
 
       <div className="container text-center height-inherit primary-font" style={{ width: "90%"}}>
         <div className="row justify-content-center height-inherit py-4">
           {/* <img src="/pix/samples/23m.jpg" alt="Sample photo"> */}
+      <Fade left delay={100}>
           <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{minHeight: "400px"}}>
             <h3 style={{textDecoration: "underline"}}>DESIGN PHILOSOPHY</h3>
             <p>Our design philosophy at TimberCraft is centered around creating furniture that is both beautiful and functional. We believe that furniture should not only enhance the aesthetics of a space but also serve a practical purpose.</p>
@@ -76,16 +82,10 @@ function About() {
             <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
             <button className='btn btn-primary' style={{ backgroundColor: "#9d1b1b" }}>Stop here</button>
           </div>
+      </Fade>
         </div>
       </div>
-
-
-
-      {/* <h2>Our Team</h2>
-    <p>We have a team of highly skilled and experienced professionals who are passionate about what they do. Our team includes experts in various fields, including marketing, design, development, and customer service. We work together to provide our clients with the best possible service.</p>
-    <h2>Contact Us</h2> */}
-      {/* <p>If you have any questions or would like to learn more about our services, please don't hesitate to contact us. You can reach us by phone, email, or through our contact form.</p> */}
-    </div>
+      </div>
   )
 }
 

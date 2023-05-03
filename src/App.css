@@ -126,6 +126,23 @@
     font-size: 22px;
 }
 
+.scrollTop{
+    cursor: pointer;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #0a6e0a7a;
+    padding: 5px;
+    box-shadow: 1px 3px 4px 1px black;
+    transition: 0.5s all ease-in-out;
+}
+
+.scrollTop:hover{
+    transform: rotate(360deg);
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 450px) {

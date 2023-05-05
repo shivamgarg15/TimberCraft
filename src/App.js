@@ -11,6 +11,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Nav from './Components/Nav';
 
 
 function App() {
@@ -21,13 +22,13 @@ function App() {
 
   return (
     <Router>
-      <Navbar scrollToTop={scrollToTop}/>
+      {/* <Navbar scrollToTop={scrollToTop}/> */}
+      <Nav/>
       <Routes >
         <Route exact path='/' element={<><BgBanner/><Body1/></>}/>
         <Route exact path='/home' element={<><BgBanner/><Body1/></>}/>
         <Route exact path='/contact' element={<Contact/>}/>
         <Route exact path='/about' element={<About/>}/>
-
       </Routes>
       <Footer />
     </Router>

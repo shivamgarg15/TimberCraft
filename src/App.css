@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 
+
+/* Navbar css */
+
+.custom-navbar{
+    height: 70px;
+}
+
+.slidingMenu{
+    background-color: white;
+    position: fixed;
+    height: 300px;
+    width: 250px;
+    right: -250px;
+    top: 70px;
+    transition: 0.5s all ease-out 0s ;
+}
+
+
 .fColumn {
     /* margin-top: 30px; */
     display: flex;

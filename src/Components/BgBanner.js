@@ -7,13 +7,13 @@ function BgBanner() {
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px)", objectFit: "fill"}}/>
+          <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 100px)", objectFit: "fill"}}/>
         </div>
         <div className="carousel-item">
-          <img src={banner2} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px)", objectFit: "fill"}}/>
+          <img src={banner2} className="d-block w-100" alt="..." style={{height: "calc(100vh - 100px)", objectFit: "fill"}}/>
         </div>
         <div className="carousel-item">
-          <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 56px)", objectFit: "fill"}}/>
+          <img src={banner1} className="d-block w-100" alt="..." style={{height: "calc(100vh - 100px)", objectFit: "fill"}}/>
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

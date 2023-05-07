@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import cross from '../Images/cross.svg'
 import logo from '../Images/logo.png'
 import scrollTop from '../Images/scrollTop.png'
@@ -19,6 +19,13 @@ function Navbar(props) {
             setMenuVisible(false);
         }
     }
+
+
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo({top: 0, behavior: "smooth"});
+    }, [location]);
 
     return (
         <nav className="navbar navbar-expand-lg stickyNav primary-font custom-navbar" data-bs-theme="dark">
@@ -52,20 +59,20 @@ function Navbar(props) {
                         {/* <span className="navbar-toggler-icon"></span> */}
                         <img src={cross} alt="" width={20}/>
                     </button>
-                    <Link className="navbar-brand custom-Brand primary-font d-block m-0 py-2" to="/" style={{ position: "relative", top: "-10px", width: "fit-content", left: "31%"}}> <img src={logo} alt="" width={100}/></Link>
+                    <Link className="navbar-brand custom-Brand primary-font d-block m-0 py-2" to="/" onClick={()=>{slidingMenu()}} style={{ position: "relative", top: "-10px", width: "fit-content", left: "31%"}}> <img src={logo} alt="" width={100}/></Link>
                     <hr class="border border-white border-1 opacity-100 m-0"/>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
                         <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" aria-current="page" to="/home">Home</Link>
+                            <Link className="nav-link custom-Link" aria-current="page" to="/home" onClick={()=>{slidingMenu()}}>Home</Link>
                         </li>
                         <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/about">About</Link>
+                            <Link className="nav-link custom-Link" to="/about" onClick={()=>{slidingMenu()}}>About</Link>
                         </li>
                         <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/services">Services</Link>
+                            <Link className="nav-link custom-Link" to="/services" onClick={()=>{slidingMenu()}}>Services</Link>
                         </li>
                         <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/contact">Contact Us</Link>
+                            <Link className="nav-link custom-Link" to="/contact" onClick={()=>{slidingMenu()}}>Contact Us</Link>
                         </li>
                     </ul>
                 </div>

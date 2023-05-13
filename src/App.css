@@ -159,20 +159,41 @@
 .scrollTop{
     cursor: pointer;
     position: fixed;
-    right: 5px;
-    bottom: 5px;
+    right: 15px;
+    top: 50px;
     height: 40px;
     border-radius: 100px;
     background-color: #0a6e0a7a;
     padding: 5px;
     box-shadow: 1px 3px 4px 1px black;
     transition: 0.5s all ease-in-out;
-    z-index: 2;
+    z-index: 1;
 }
 
 .scrollTop:hover{
-    transform: rotate(360deg);
+   background-color: black;
 }
+
+/* Animations */
+
+@keyframes hide{
+    from {
+        transform: translateY(calc(100vh - 100px));
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes show{
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(calc(100vh - 100px));
+    }
+}
+
 
 /* Media Queries */
 

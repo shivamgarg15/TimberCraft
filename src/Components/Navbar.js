@@ -6,6 +6,16 @@ import scrollTop from '../Images/scrollTop.png'
 
 function Navbar(props) {
 
+    window.addEventListener('scroll', (e) => {
+        let scrollTopButton = document.querySelector('.scrollTop');
+        if (window.scrollY === 0) {
+            scrollTopButton.style.animation = 'hide 0.5s forwards ease-in-out';
+        }
+        else {
+            scrollTopButton.style.animation = 'show 0.5s forwards ease-in-out';
+        }
+    })
+
     const [menuVisible, setMenuVisible] = useState(false);
 
     const slidingMenu = () => {
@@ -24,62 +34,64 @@ function Navbar(props) {
     const location = useLocation();
 
     useEffect(() => {
-      window.scrollTo({top: 0, behavior: "smooth"});
+        window.scrollTo({ top: 0, behavior: "instant" });
     }, [location]);
 
     return (
-        <nav className="navbar navbar-expand-lg stickyNav primary-font custom-navbar" data-bs-theme="dark">
-            <div className="container-fluid custom-Fluid">
-                <Link className="navbar-brand custom-Brand primary-font" to="/" style={{ textShadow: "3px 3px 2px black", fontSize: "25px", zIndex: "1"}}>
-                    <img src={logo} alt="" width={120}/>
+        <>
+            <nav className="navbar navbar-expand-lg stickyNav primary-font custom-navbar" data-bs-theme="dark">
+                <div className="container-fluid custom-Fluid">
+                    <Link className="navbar-brand custom-Brand primary-font" to="/" style={{ textShadow: "3px 3px 2px black", fontSize: "25px", zIndex: "1" }}>
+                        <img src={logo} alt="" width={120} />
                     </Link>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" aria-current="page" to="/home">Home</Link>
-                        </li>
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/about">About</Link>
-                        </li>
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/services">Services</Link>
-                        </li>
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/contact">Contact Us</Link>
-                        </li>
-                    </ul>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" aria-current="page" to="/home">Home</Link>
+                            </li>
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" to="/about">About</Link>
+                            </li>
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" to="/services">Services</Link>
+                            </li>
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" to="/contact">Contact Us</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div className='w-100 d-flex justify-content-end' style={{ position: "absolute", padding: "0px 10px" }}>
-                <button className="navbar-toggler" type="button" onClick={slidingMenu}>
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className='slidingMenu text-center'>
-                    <button className="navbar-toggler" type="button" onClick={slidingMenu} style={{position: "relative", border: "none", right: "-40%", top: "5px", filter: "invert(1)", zIndex: "2"}}>
-                        {/* <span className="navbar-toggler-icon"></span> */}
-                        <img src={cross} alt="" width={20}/>
+                <div className='w-100 d-flex justify-content-end' style={{ position: "absolute", padding: "0px 10px" }}>
+                    <button className="navbar-toggler" type="button" onClick={slidingMenu}>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <Link className="navbar-brand custom-Brand primary-font d-block m-0 py-2" to="/" onClick={()=>{slidingMenu()}} style={{ position: "relative", top: "-10px", width: "fit-content", left: "31%"}}> <img src={logo} alt="" width={100}/></Link>
-                    <hr class="border border-white border-1 opacity-100 m-0"/>
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" aria-current="page" to="/home" onClick={()=>{slidingMenu()}}>Home</Link>
-                        </li>
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/about" onClick={()=>{slidingMenu()}}>About</Link>
-                        </li>
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/services" onClick={()=>{slidingMenu()}}>Services</Link>
-                        </li>
-                        <li className="nav-item hoverNavbar">
-                            <Link className="nav-link custom-Link" to="/contact" onClick={()=>{slidingMenu()}}>Contact Us</Link>
-                        </li>
-                    </ul>
+                    <div className='slidingMenu text-center'>
+                        <button className="navbar-toggler" type="button" onClick={slidingMenu} style={{ position: "relative", border: "none", right: "-40%", top: "5px", filter: "invert(1)", zIndex: "2" }}>
+                            {/* <span className="navbar-toggler-icon"></span> */}
+                            <img src={cross} alt="" width={20} />
+                        </button>
+                        <Link className="navbar-brand custom-Brand primary-font d-block m-0 py-2" to="/" onClick={() => { slidingMenu() }} style={{ position: "relative", top: "-10px", width: "fit-content", left: "31%" }}> <img src={logo} alt="" width={100} /></Link>
+                        <hr class="border border-white border-1 opacity-100 m-0" />
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" aria-current="page" to="/home" onClick={() => { slidingMenu() }}>Home</Link>
+                            </li>
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" to="/about" onClick={() => { slidingMenu() }}>About</Link>
+                            </li>
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" to="/services" onClick={() => { slidingMenu() }}>Services</Link>
+                            </li>
+                            <li className="nav-item hoverNavbar">
+                                <Link className="nav-link custom-Link" to="/contact" onClick={() => { slidingMenu() }}>Contact Us</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <img src={scrollTop} alt='' className='scrollTop' onClick={props.scrollToTop}></img>
-            </div>
 
-        </nav>
+            </nav>
+            <img src={scrollTop} alt='' className='scrollTop' onClick={props.scrollToTop}></img>
+        </>
     )
 }
 

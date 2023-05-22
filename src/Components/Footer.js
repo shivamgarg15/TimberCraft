@@ -1,11 +1,13 @@
 import React from 'react'
+import { MDBIcon } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <footer className='Fbg1'>
-            <div className="container text-center" style={{width: "90%"}}>
+            <div className="container-fluid">
                 <div className="row justify-content-center">
-                    <div className="col-10 col-sm-8 col-lg-3 mx-4 my-3" style={{ backgroundColor: "#00000033", height: "300px", borderRadius: "9px" }}>
+                    <div className="col-11 col-md-5 col-lg-3 mx-4 my-3">
                         <div className='fHead'>Contact Us</div>
                         <div className='fColumn'>
                             <div>
@@ -19,14 +21,34 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-10 col-sm-8 col-lg-3 mx-4 my-3" style={{ backgroundColor: "#00000033", height: "300px", borderRadius: "9px" }}>
-                    <div className='fHead'>TimberCraft</div>
+                    <div className="col-11 col-md-5 col-lg-3 mx-4 my-3">
+                        <div className='fHead'>TimberCraft</div>
+                        <div className="fColumn">
+                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum culpa iusto non placeat provident quia debitis laudantium soluta possimus.</div>
+                        </div>
                     </div>
-                    <div className="col-10 col-sm-8 col-lg-3 mx-4 my-3" style={{ backgroundColor: "#00000033", height: "300px", borderRadius: "9px" }}>
-                        <div className='fHead'>Keep in Touch</div>
+                    <div className="col-11 col-md-11 col-lg-3 mx-4 my-3">
+                        <div className='fHead'>Keep in Touch
+                        </div>
+                        <div className="fColumn">
+                            <div>
+                                <Link to='/' className='me-4 text-reset'>
+                                    <MDBIcon size='2x' fab icon="facebook-f" />
+                                </Link>
+                                <Link to='/' className='me-4 text-reset'>
+                                    <MDBIcon size='2x' fab icon="twitter" />
+                                </Link>
+                                <Link to='/' className='me-4 text-reset'>
+                                    <MDBIcon size='2x' fab icon="instagram" />
+                                </Link>
+                                <Link to='/' className='text-reset'>
+                                    <MDBIcon size='2x' fab icon="linkedin" />
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 <div className='text-center pb-2'>Copyright © 2023 TimberCraft Co. All rights reserved.</div>
+                </div>
             </div>
         </footer>
     )

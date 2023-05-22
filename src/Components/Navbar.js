@@ -65,10 +65,10 @@ function Navbar(props) {
                     <button className="navbar-toggler" type="button" onClick={slidingMenu}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className='slidingMenu text-center'>
+                    <div className='slidingMenu text-center boxShadow' style={{borderRadius: "0px"}}>
                         <button className="navbar-toggler" type="button" onClick={slidingMenu} style={{ position: "relative", border: "none", right: "-40%", top: "5px", filter: "invert(1)", zIndex: "2" }}>
                             {/* <span className="navbar-toggler-icon"></span> */}
-                            <img src={cross} alt="" width={20} />
+                            <img src={cross} alt="" height={20} />
                         </button>
                         <Link className="navbar-brand custom-Brand primary-font d-block m-0 py-2" to="/" onClick={() => { slidingMenu() }} style={{ position: "relative", top: "-10px", width: "fit-content", left: "31%" }}> <img src={logo} alt="" width={100} /></Link>
                         <hr class="border border-white border-1 opacity-100 m-0" />

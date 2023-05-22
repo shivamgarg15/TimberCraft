@@ -10,7 +10,7 @@ function Body1() {
         <div className='onePageComponent primary-font' style={{ backgroundColor: "white", display: "flex", alignItems: "center", padding: "20px 0px", boxSizing: "content-box", flexDirection: "column", justifyContent: "center"}}>
             {/* <div>Fullfilling your dream</div> */}
             <Fade left duration={1500}>
-            <div className="container text-center height-inherit boxShadow" style={{width: "90%"}}>
+            <div className="container text-center height-inherit boxShadow" style={{width: "90%",background: "linear-gradient(90deg, white, #ffcead)"}}>
                 <div className="row justify-content-center height-inherit">
                     <div className="col-12 col-md-4 col-lg-3 mx-4 my-3 body1Column">
                         <div style={{ color: "indianred" }}>Creative</div>

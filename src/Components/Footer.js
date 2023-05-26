@@ -24,7 +24,7 @@ function Footer() {
                     <div className="col-11 col-md-5 col-lg-3 mx-4 my-3">
                         <div className='fHead'>TimberCraft</div>
                         <div className="fColumn">
-                            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum culpa iusto non placeat provident quia debitis laudantium soluta possimus.</div>
+                            <div>Step inside the doors of Timbercraft, and you will be greeted by a captivating display of furniture that blends exquisite design with the finest materials.</div>
                         </div>
                     </div>
                     <div className="col-11 col-md-11 col-lg-3 mx-4 my-3">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import cross from '../Images/cross.svg'
-import logo from '../Images/logo.png'
+import logo from '../Images/favicon3.0.png'
 import scrollTop from '../Images/scrollTop.png'
 
 function Navbar(props) {

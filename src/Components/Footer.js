@@ -10,13 +10,13 @@ function Footer() {
                     <div className="col-11 col-md-5 col-lg-3 mx-4 my-3">
                         <div className='fHead'>Contact Us</div>
                         <div className='fColumn'>
-                            <div>
+                            <div className='pb-2'>
                                 Address: SHAHDARA, DELHI
                             </div>
-                            <div>
+                            <div className='pb-2'>
                                 Email: djenterprises@gmail.com
                             </div>
-                            <div>
+                            <div className='pb-2'>
                                 Phone: 9971354050
                             </div>
                         </div>
@@ -33,16 +33,16 @@ function Footer() {
                         <div className="fColumn">
                             <div>
                                 <Link to='/' className='me-4 text-reset'>
-                                    <MDBIcon size='2x' fab icon="facebook-f" />
+                                    <MDBIcon className='facebook' size='2x' fab icon="facebook-f" />
                                 </Link>
                                 <Link to='/' className='me-4 text-reset'>
-                                    <MDBIcon size='2x' fab icon="twitter" />
+                                    <MDBIcon className='twitter' size='2x' fab icon="twitter" />
                                 </Link>
                                 <Link to='/' className='me-4 text-reset'>
-                                    <MDBIcon size='2x' fab icon="instagram" />
+                                    <MDBIcon className='insta' size='2x' fab icon="instagram" />
                                 </Link>
                                 <Link to='/' className='text-reset'>
-                                    <MDBIcon size='2x' fab icon="linkedin" />
+                                    <MDBIcon className='linkedin' size='2x' fab icon="linkedin-in" />
                                 </Link>
                             </div>
                         </div>

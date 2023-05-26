@@ -11,6 +11,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import CounterUp from "./Components/CounterUp";
 
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
       <Navbar scrollToTop={scrollToTop} />
       <Routes >
 
-        <Route exact path='/' element={<><BgBanner /><Body1 /></>} />
-        <Route exact path='/home' element={<><BgBanner /><Body1 /></>} />
+        <Route exact path='/' element={<><BgBanner /><Body1 /><CounterUp/></>} />
+        <Route exact path='/home' element={<><BgBanner /><Body1 /><CounterUp/></>} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='/about' element={<About />} />
       </Routes>

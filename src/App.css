@@ -49,12 +49,21 @@
 }
 
 .stickyNav {
-    background: linear-gradient(31deg, #311300, #ba7a3c);
+    background: linear-gradient(180deg, #332a2a, black);
+    /* background: linear-gradient(31deg, #311300, #ba7a3c); */
     position: sticky;
     top: 0px;
     left: 0px;
     z-index: 2;
     box-shadow: 0px -35px 40px 1px black;
+}
+
+.navbar-brand img{
+    height: 179px;
+    width: 172px;
+    margin-top: 21px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .hoverNavbar {

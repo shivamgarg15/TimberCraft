@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 function Body1() {
     return (
-        <div className='onePageComponent primary-font' style={{ background: "linear-gradient(180deg, #81613ad9 0% 54%, white 100%)", display: "flex", alignItems: "center", padding: "20px 0px", boxSizing: "content-box", flexDirection: "column", justifyContent: "center"}}>
+        <div className='onePageComponent primary-font bg-primary' style={{  display: "flex", alignItems: "center", padding: "20px 0px", boxSizing: "content-box", flexDirection: "column", justifyContent: "center"}}>
             {/* <div>Fullfilling your dream</div> */}
             <Fade left duration={1500}>
             <div className="container text-center height-inherit boxShadow" style={{width: "90%", background: "white"}}>

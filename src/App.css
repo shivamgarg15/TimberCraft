@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
 
 /* Navbar css */
 
-.custom-navbar {
-    height: 100px;
-}
-
 .slidingMenu {
     /* background-color: rgb(73, 41, 9); */
-    background: linear-gradient(35deg, #311300, #ba7a3c);
+    background: linear-gradient(92deg, #332a2a, black);
+    /* background: linear-gradient(35deg, #311300, #ba7a3c); */
     position: fixed;
     height: 100vh;
-    width: 250px;
+    width: 55%;
     right: -250px;
     top: 0px;
     transition: 0.5s all ease-out 0s;
     z-index: 2;
+    max-width: 250px;
+    min-width: 170px;
 }
 
 
@@ -58,28 +57,19 @@
     left: 0px;
     z-index: 2;
     box-shadow: 0px -35px 40px 1px black;
-}
-
-.navbar-brand img{
-    height: 179px;
-    width: 172px;
-    margin-top: 21px;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.hoverNavbar {
-    border-radius: 2px;
-    padding: 0px 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 30px;
+    white-space: nowrap;
 }
 
 .hoverNavbar a {
     color: white;
-    transition: 0.5s all ease-in-out;
+    padding: 10px 25px!important;
 }
 
 .hoverNavbar a:hover {
     color: red;
+    transition: 0.5s all ease-in-out;
     /* text-decoration: underline;
     text-underline-offset: 5px; */
 }
@@ -135,7 +125,7 @@
 
 
 .brightness-mid {
-    filter: brightness(0.60);
+    filter: brightness(0.5);
 }
 
 .bannerCenter {
@@ -234,6 +224,14 @@
 
 .countUp span{
     font-weight: bold;
+}
+
+.bg-primary{
+    background: linear-gradient(rgb(39, 0, 0) 0%, rgb(131 72 0 / 85%) 54%, #270000 100%);
+}
+
+.bg-white{
+    background: white;
 }
 
 /* Animations */

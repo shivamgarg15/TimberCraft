@@ -12,6 +12,15 @@ import {
   Route,
 } from "react-router-dom";
 import CounterUp from "./Components/CounterUp";
+import h1 from './Images/home1.jpg'
+import h2 from './Images/home2.jpg'
+import h3 from './Images/home3.jpg'
+import a1 from './Images/about1.jpg'
+import a2 from './Images/about2.jpg'
+import a3 from './Images/about3.jpg'
+import c1 from './Images/contact1.jpg'
+import c2 from './Images/contact2.jpg'
+import c3 from './Images/contact3.jpg'
 
 
 function App() {
@@ -26,10 +35,10 @@ function App() {
       <Navbar scrollToTop={scrollToTop} />
       <Routes >
 
-        <Route exact path='/' element={<><BgBanner /><Body1 /><CounterUp/></>} />
-        <Route exact path='/home' element={<><BgBanner /><Body1 /><CounterUp/></>} />
-        <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/about' element={<About />} />
+        <Route exact path='/' element={<><BgBanner key={1} img={[h1,h2,h3]} txt={["TimberCraft","Design Your Dreams"]}/><Body1 /><CounterUp/></>} />
+        <Route exact path='/home' element={<><BgBanner key={1} img={[h1,h2,h3]} txt={["TimberCraft","Design Your Dreams"]}/><Body1 /><CounterUp/></>} />
+        <Route exact path='/about' element={<><BgBanner key={2} img={[a1,a2,a3]} txt={["We Build Trust","Live In Future"]}/><About /></>} />
+        <Route exact path='/contact' element={<><BgBanner key={3} img={[c1,c2,c3]} txt={["Raise Your Queries","Feel Free To Ask"]}/><Contact /></>} />
       </Routes>
       <Footer />
     </Router>

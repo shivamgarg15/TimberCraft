@@ -1,19 +1,10 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import banner2 from '../Images/banner2.jpg'
-import Zoom from 'react-reveal/Zoom';
 
 function About() {
   return (
     <div style={{ backgroundColor: "white" }}>
-      <div className="bannerCenter">
-        <img src={banner2} className="d-block w-100 brightness-mid" alt="..." style={{ height: "calc(100vh - 100px)" }} />
-        <Zoom>
-          <div>
-            <div>About Us</div>
-          </div>
-        </Zoom>
-      </div>
+      
       <div className='py-5'>
         <Fade left delay={200} duration={1500}>
           <div className='container boxShadow body1Column' style={{ width: "90%" }}>

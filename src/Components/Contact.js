@@ -1,20 +1,10 @@
 import React from 'react'
-import banner2 from '../Images/banner2.jpg'
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 
 function Contact() {
-
   return (
     <div style={{ backgroundColor: "white" }}>
-      <div className="bannerCenter">
-        <img src={banner2} className="d-block w-100 brightness-mid" alt="..." style={{ height: "calc(100vh - 100px)" }} />
-        <Zoom>
-          <div>
-            <div>Contact Us</div>
-          </div>
-        </Zoom>
-      </div>
+      
       <div className="container onePageComponent" style={{ maxWidth: "600px", padding: "20px" }}>
         <Fade left>
           <div className="text-center primary-font mb-4" style={{ textDecoration: "underline", fontFamily: "'Roboto', sans-serif", fontSize: "30px" }}>Write your queries</div>

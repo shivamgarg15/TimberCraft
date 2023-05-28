@@ -102,6 +102,9 @@
 
 .body1Column a {
     align-self: flex-start;
+    position: relative;
+    top: -20px;
+    text-decoration: none;
 }
 
 .body1Column div div {

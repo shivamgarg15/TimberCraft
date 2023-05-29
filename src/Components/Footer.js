@@ -47,7 +47,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                <div className='text-center pb-2'>Copyright © 2023 TimberCraft Co. All rights reserved.</div>
+                <div className='text-center my-2'>Copyright © 2023 TimberCraft Co. All rights reserved.</div>
                 </div>
             </div>
         </footer>

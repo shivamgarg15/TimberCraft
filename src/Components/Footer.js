@@ -10,13 +10,13 @@ function Footer() {
                     <div className="col-11 col-md-5 col-lg-3 mx-4 my-3">
                         <div className='fHead'>Contact Us</div>
                         <div className='fColumn'>
-                            <div className='pb-2'>
+                            <div className='my-2'>
                                 Address: SHAHDARA, DELHI
                             </div>
-                            <div className='pb-2'>
+                            <div className='my-2'>
                                 Email: djenterprises@gmail.com
                             </div>
-                            <div className='pb-2'>
+                            <div className='my-2'>
                                 Phone: 9971354050
                             </div>
                         </div>

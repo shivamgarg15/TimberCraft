@@ -3,7 +3,7 @@ import img from './ServicesData'
 
 function Services() {
     return (
-        <>
+        <div className='py-4'>
             <div className='py-4'>
                 <h1 className='text-center'>Modular Kitchen</h1>
                 <div className="m-auto" style={{ width: "90%" }}>
@@ -37,8 +37,7 @@ function Services() {
                     </div>
                 </div>
             </div>
-
-        </>
+        </div>
     )
 }
 

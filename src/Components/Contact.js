@@ -7,7 +7,7 @@ function Contact() {
       
       <div className="container onePageComponent" style={{ maxWidth: "600px", padding: "20px" }}>
         <Fade left>
-          <div className="text-center primary-font mb-4" style={{ textDecoration: "underline", fontFamily: "'Roboto', sans-serif", fontSize: "30px" }}>Write your queries</div>
+          <div className="text-center mb-4" style={{ textDecoration: "underline", fontSize: "30px" }}>Write your queries</div>
         </Fade>
         <Fade bottom>
           <form>

@@ -81,10 +81,10 @@ function Navbar(props) {
                                 <Link className="nav-link custom-Link" to="/about" style={{color: location==='/about'?"#21ff01":""}} onClick={() => { slidingMenu() }}>About</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/services" onClick={() => { slidingMenu() }}>Services</Link>
+                                <Link className="nav-link custom-Link" to="/services" style={{color: location==='/services'?"#21ff01":""}} onClick={() => { slidingMenu() }}>Services</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/contact" onClick={() => { slidingMenu() }}>Contact Us</Link>
+                                <Link className="nav-link custom-Link" to="/contact" style={{color: location==='/contact'?"#21ff01":""}} onClick={() => { slidingMenu() }}>Contact Us</Link>
                             </li>
                         </ul>
                     </div>

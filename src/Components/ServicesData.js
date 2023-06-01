@@ -1,40 +1,38 @@
-import mk1 from '../Images/serviceImages/1685431711446.jpg'
-import mk2 from '../Images/serviceImages/1685431711675.jpg'
-import mk3 from '../Images/serviceImages/1685431711627.jpg'
-import it1 from '../Images/serviceImages/1685431711604.jpg'
-import it2 from '../Images/serviceImages/1685431711581.jpg'
-import it3 from '../Images/serviceImages/1685431711558.jpg'
-import f1 from '../Images/serviceImages/1685431711514.jpg'
-import f2 from '../Images/serviceImages/1685431711491.jpg'
-import f3 from '../Images/serviceImages/1685431711467.jpg'
+const mk = require.context('../Images/serviceImages/modularKitchen', false);
+const bt = require.context('../Images/serviceImages/bathRoom', false);
+const fg = require.context('../Images/serviceImages/furnitureGoods', false);
+const lr = require.context('../Images/serviceImages/livingRoom', false);
+const br = require.context('../Images/serviceImages/bedRoom', false);
+const mkList = mk.keys().map(element => mk(element));
+const btList = bt.keys().map(element => bt(element));
+const fgList = fg.keys().map(element => fg(element));
+const lrList = lr.keys().map(element => lr(element));
+const brList = br.keys().map(element => br(element));
 
 const images = [
-    
-        [
-            mk1,mk2,mk3
-        ]
-    ,
 
-        [
-            it1,it2,it3
-        ]
-    ,
-    
-        [
-            f1,f2,f3
-        ]
-    
+    lrList,
+
+    brList,
+
+    btList,
+
+    fgList,
+
+    mkList,
 ]
 
 const names = [
-    
-        "Modular Kitchen"
-    ,
 
-        "Interior Designing"
+    "Living Room"
     ,
-    
-        "Furniture Goods"
-    
+    "Bedroom"
+    ,
+    "Bathroom"
+    ,
+    "Furniture Goods"
+    ,
+    "Modular Kitchen"
+
 ]
-export {images,names};
+export { images, names };

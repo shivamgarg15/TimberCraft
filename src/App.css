@@ -58,7 +58,7 @@
     position: sticky;
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 3;
     box-shadow: 0px -35px 40px 1px black;
     font-size: 30px;
     white-space: nowrap;
@@ -131,6 +131,10 @@
 
 .brightness-mid {
     filter: brightness(0.5);
+}
+
+.brightness-hi {
+    filter: brightness(0.7);
 }
 
 .bannerCenter {
@@ -324,3 +328,12 @@
 
 
 /* about us css  */
+
+
+.carousel-indicators [data-bs-target] {
+    border: 2px;
+    border-radius: 100px;
+    height: 10px;
+    width: 10px;
+    color: black;
+}

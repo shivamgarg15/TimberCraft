@@ -4,7 +4,7 @@ function BgBanner(props) {
 
   const changeText = (element)=>{
     let a = document.querySelector('.nameAnimation div');
-    console.log(element.elapsedTime);
+    // console.log(element.elapsedTime);
     if(element.elapsedTime%10===0)
     {
         a.innerText = props.txt[0];
@@ -18,9 +18,13 @@ function BgBanner(props) {
   
   useEffect(() => {
     let x = setTimeout(() => {
-      let control =  document.getElementById('next');
+      // let control =  document.getElementById('next');
+      let control = document.querySelectorAll('.carousel-control-next');
       try{
-      control.click();
+      control.forEach(element => {
+        element.click();
+      });
+      // control.click();
       }
       catch(e){
         console.log(e);

@@ -239,13 +239,32 @@
     background: white;
 }
 
-.servicesImg{
-    transition: 0.5s all ease-in-out;
-    border-radius: 10px;
+.fullscreen{
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: #000000a1;
+    display: none;
+    z-index: 2;
 }
 
-.servicesImg:hover{
-    transform: scale(1.01);
+.fullscreen img:nth-child(1){
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen img:nth-child(2)
+{
+    position: fixed;
+    top: 130px;
+    height: 25px;
+    right: 30px;
+    filter: invert(1);
+    width: fit-content;
+    cursor: pointer;
 }
 
 /* Animations */

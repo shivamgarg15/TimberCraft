@@ -1,7 +1,15 @@
 import React from 'react'
 import {images,names} from './ServicesData'
+import cross from '../Images/cross.svg'
 
 function Services() {
+
+    const showFullscreen = (e)=>{
+        let a = document.querySelector('.fullscreen img');
+        document.querySelector('.fullscreen').style.display = "block";
+        a.src = e;
+    }
+
     return (
         <div className='py-4'>
             {images.map((elem, ind) => {
@@ -20,10 +28,10 @@ function Services() {
                                 </div>
                                 <div class="carousel-inner brightness-hi">
                                     <div class="carousel-item active" data-bs-interval="4900">
-                                        <img src={elem[0]} class="d-block w-100" alt="" width={"100%"} style={{ height: "50vh", maxHeight: "400px", objectFit: "cover" }} />
+                                        <img src={elem[0]} class="d-block w-100" alt="" width={"100%"} style={{ height: "50vh", maxHeight: "400px", objectFit: "cover" }} onClick={()=>{showFullscreen(elem[0])}}/>
                                     </div>
                                     {elem.map((element, index) => {
-                                        return (index > 0 && <div className="carousel-item" data-bs-interval="4900" key={index} ><img className='d-block w-100' src={element} alt="" width={"100%"} style={{ height: "50vh", maxHeight: "400px", objectFit: "cover" }} /></div>);
+                                        return (index > 0 && <div className="carousel-item" data-bs-interval="4900" key={index} ><img className='d-block w-100' src={element} alt="" width={"100%"} style={{ height: "50vh", maxHeight: "400px", objectFit: "cover" }} onClick={()=>{showFullscreen(element)}}/></div>);
                                     })
                                     }
                                 </div>
@@ -41,7 +49,10 @@ function Services() {
                 )
             })}
 
-
+            <div className='fullscreen'>
+                <img src="" alt="" />
+                <img src={cross} alt="" onClick={()=>{document.querySelector('.fullscreen').style.display = "none";}}/>
+            </div>
         </div>
     )
 }

@@ -17,6 +17,14 @@ const images = {
         "furniture": [
             img3,img3,img3,img3
         ]
-    
+    ,
+        "Elevation": [
+            img,img,img,img
+        ]
+    ,
+       "Work Space": [
+            img,img,img,img
+        ]
+,
 }
 export default images

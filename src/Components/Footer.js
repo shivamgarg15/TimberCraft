@@ -17,14 +17,14 @@ function Footer() {
                                 Email: djenterprises@gmail.com
                             </div>
                             <div className='my-2'>
-                                Phone: 9971354050
+                                Phone: +91 99713 54050
                             </div>
                         </div>
                     </div>
                     <div className="col-11 col-md-5 col-lg-3 mx-4 my-3">
                         <div className='fHead'>TimberCraft</div>
                         <div className="fColumn">
-                            <div>Step inside the doors of Timbercraft, and you will be greeted by a captivating display of furniture that blends exquisite design with the finest materials.</div>
+                            <div>Step inside the doors of Timbercraft, you'll encounter a mesmerizing exhibition of furniture and interior concepts, seamlessly combining  the finest materials, awaiting your admiration.</div>
                         </div>
                     </div>
                     <div className="col-11 col-md-11 col-lg-3 mx-4 my-3">

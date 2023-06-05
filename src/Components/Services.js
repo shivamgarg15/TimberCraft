@@ -1,10 +1,30 @@
 import React from 'react'
-import {images,names} from './ServicesData'
+import { images, names } from './ServicesData'
 import cross from '../Images/cross.svg'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-function Services() {
+const responsive = {
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+        // slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+        // slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+        // slidesToSlide: 1 // optional, default to 1.
+    }
+};
 
-    const showFullscreen = (e)=>{
+function Services(props) {
+
+    const showFullscreen = (e) => {
         let a = document.querySelector('.fullscreen img');
         document.querySelector('.fullscreen').style.display = "block";
         a.src = e;
@@ -16,44 +36,36 @@ function Services() {
                 return (
                     <div className='py-4' key={ind}>
                         <h1 className='text-center mt-2 mb-3'>{names[ind]}</h1>
-                        <div className="m-auto" style={{ width: "90%" }}>
+                        <div className="m-auto">
 
-                            <div id={`carouselExampleIndicators${ind}`} class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target={`#carouselExampleIndicators${ind}`} data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    {elem.map((element, index) => {
-                                        return (index > 0 && <button type="button" data-bs-target={`#carouselExampleIndicators${ind}`}data-bs-slide-to={index} aria-label={index + 1} key={index}></button>);
-                                    })
-                                    }
-                                </div>
-                                <div class="carousel-inner brightness-hi">
-                                    <div class="carousel-item active" data-bs-interval="4900">
-                                        <img src={elem[0]} class="d-block w-100" alt="" width={"100%"} style={{ height: "50vh", maxHeight: "400px", objectFit: "cover" }} onClick={()=>{showFullscreen(elem[0])}}/>
-                                    </div>
-                                    {elem.map((element, index) => {
-                                        return (index > 0 && <div className="carousel-item" data-bs-interval="4900" key={index} ><img className='d-block w-100' src={element} alt="" width={"100%"} style={{ height: "50vh", maxHeight: "400px", objectFit: "cover" }} onClick={()=>{showFullscreen(element)}}/></div>);
-                                    })
-                                    }
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target={`#carouselExampleIndicators${ind}`}data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target={`#carouselExampleIndicators${ind}`}data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                            <Carousel
+                                swipeable={true}
+                                draggable={false}
+                                showDots={true}
+                                responsive={responsive}
+                                infinite={true}
+                                autoPlay={true}
+                                autoPlaySpeed={4000}
+                                keyBoardControl={true}
+                                transitionDuration={1500}
+                                itemClass='px-3'
+                            >
+                
+                            {elem.map((element, index) => {
+                                return (<div><img src={element} alt="" width={"100%"} style={{ height: "50vh", maxHeight: "400px", objectFit: "cover" }} onClick={() => { showFullscreen(element) }} /></div>);
+                            })
+                            }
+                            </Carousel>
                         </div>
                     </div>
                 )
-            })}
+})}
 
-            <div className='fullscreen'>
-                <img src="" alt="" />
-                <img src={cross} alt="" onClick={()=>{document.querySelector('.fullscreen').style.display = "none";}}/>
-            </div>
-        </div>
+<div className='fullscreen'>
+    <img src="" alt="" />
+    <img src={cross} alt="" onClick={() => { document.querySelector('.fullscreen').style.display = "none"; }} />
+</div>
+        </div >
     )
 }
 

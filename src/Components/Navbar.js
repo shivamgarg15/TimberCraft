@@ -48,16 +48,16 @@ function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" aria-current="page" to="/home" style={{color: location==='/home'||location==='/'?"#21ff01":""}}>Home</Link>
+                                <Link className="nav-link custom-Link" aria-current="page" to="/home" style={{ color: location === '/home' || location === '/' ? "#21ff01" : "" }}>Home</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/about" style={{color: location==='/about'?"#21ff01":""}}>About</Link>
+                                <Link className="nav-link custom-Link" to="/about" style={{ color: location === '/about' ? "#21ff01" : "" }}>About</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/services" style={{color: location==='/services'?"#21ff01":""}}>Services</Link>
+                                <Link className="nav-link custom-Link" to="/services" style={{ color: location === '/services' ? "#21ff01" : "" }}>Services</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/contact" style={{color: location==='/contact'?"#21ff01":""}}>Contact Us</Link>
+                                <Link className="nav-link custom-Link" to="/contact" style={{ color: location === '/contact' ? "#21ff01" : "" }}>Contact Us</Link>
                             </li>
                         </ul>
                     </div>
@@ -66,7 +66,7 @@ function Navbar(props) {
                     <button className="navbar-toggler" type="button" onClick={slidingMenu}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className='slidingMenu text-center boxShadow' style={{borderRadius: "0px"}}>
+                    <div className='slidingMenu text-center boxShadow' style={{ borderRadius: "0px" }}>
                         <button className="navbar-toggler" type="button" onClick={slidingMenu} style={{ position: "relative", border: "none", right: "-40%", top: "5px", filter: "invert(1)", zIndex: "2" }}>
                             {/* <span className="navbar-toggler-icon"></span> */}
                             <img src={cross} alt="" height={20} />
@@ -75,22 +75,25 @@ function Navbar(props) {
                         <hr className="border border-white border-1 opacity-100 m-0" />
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" aria-current="page" to="/home" style={{color: location==='/home'||location==='/'?"#21ff01":""}} onClick={() => { slidingMenu() }}>Home</Link>
+                                <Link className="nav-link custom-Link" aria-current="page" to="/home" style={{ color: location === '/home' || location === '/' ? "#21ff01" : "" }} onClick={() => { slidingMenu() }}>Home</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/about" style={{color: location==='/about'?"#21ff01":""}} onClick={() => { slidingMenu() }}>About</Link>
+                                <Link className="nav-link custom-Link" to="/about" style={{ color: location === '/about' ? "#21ff01" : "" }} onClick={() => { slidingMenu() }}>About</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/services" onClick={() => { slidingMenu() }}>Services</Link>
+                                <Link className="nav-link custom-Link" to="/services" style={{ color: location === '/services' ? "#21ff01" : "" }} onClick={() => { slidingMenu() }}>Services</Link>
                             </li>
                             <li className="nav-item hoverNavbar">
-                                <Link className="nav-link custom-Link" to="/contact" onClick={() => { slidingMenu() }}>Contact Us</Link>
+                                <Link className="nav-link custom-Link" to="/contact" style={{ color: location === '/contact' ? "#21ff01" : "" }} onClick={() => { slidingMenu() }}>Contact Us</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
 
             </nav>
+            {props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show w-100`} role="alert" style={{position: "fixed", zIndex: "2"}}>
+                <strong>{props.alert.message}</strong>
+            </div>}
             <img src={scrollTop} alt='' className='scrollTop' onClick={props.scrollToTop}></img>
         </>
     )

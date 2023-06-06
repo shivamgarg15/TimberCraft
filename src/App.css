@@ -3,12 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
 
+/* Root */
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+}
+
 /* Navbar css */
 
 .slidingMenu {
-    /* background-color: rgb(73, 41, 9); */
     background: linear-gradient(92deg, #332a2a, black);
-    /* background: linear-gradient(35deg, #311300, #ba7a3c); */
     position: fixed;
     height: 100vh;
     width: 55%;
@@ -22,7 +27,6 @@
 
 
 .fColumn {
-    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,8 +34,8 @@
 }
 
 .fColumn div {
-    /* padding: 20px 0px; */
     color: white;
+    font-weight: 400;
 }
 
 .fHead {
@@ -51,13 +55,11 @@
 
 .stickyNav {
     background: linear-gradient(180deg, #332a2a, black);
-    /* background: linear-gradient(31deg, #311300, #ba7a3c); */
     position: sticky;
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 3;
     box-shadow: 0px -35px 40px 1px black;
-    font-family: 'Baloo Bhai 2', cursive;
     font-size: 30px;
     white-space: nowrap;
 }
@@ -65,13 +67,12 @@
 .hoverNavbar a {
     color: white;
     padding: 10px 25px!important;
+    font-family: 'Baloo Bhai 2', cursive;
 }
 
 .hoverNavbar a:hover {
     color: red;
     transition: 0.5s all ease-in-out;
-    /* text-decoration: underline;
-    text-underline-offset: 5px; */
 }
 
 .onePageComponent {
@@ -85,19 +86,19 @@
 .body1Column {
     display: flex;
     flex-direction: column;
-    font-family: 'Titillium Web', sans-serif;
-    /* align-items: flex-start; */
 }
 
 .body1Column div {
     padding: 20px 0px;
     font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .body1Column p {
     padding: 15px 0px;
     font-size: 20px;
     text-align: justify;
+    /* font-family: 'Titillium Web', sans-serif; */
 }
 
 .body1Column a {
@@ -105,6 +106,7 @@
     position: relative;
     top: -20px;
     text-decoration: none;
+    /* font-family: 'Titillium Web', sans-serif; */
 }
 
 .body1Column div div {
@@ -131,11 +133,14 @@
     filter: brightness(0.5);
 }
 
+.brightness-hi {
+    filter: brightness(0.7);
+}
+
 .bannerCenter {
     position: relative;
     text-align: center;
     color: white;
-    font-family: 'Sigmar', cursive;
     font-size: 50px;
     white-space: nowrap;
 }
@@ -165,7 +170,6 @@
     top: 50px;
     height: 40px;
     border-radius: 100px;
-    /* background-color: #0a6e0a7a; */
     padding: 5px;
     box-shadow: 1px 3px 4px 1px black;
     transition: 0.5s all ease-in-out;
@@ -182,7 +186,6 @@
     left: 50%;
     font-size: 60px;
     transform: translate(-50%, -50%);
-    /* font-family: 'Pangolin', cursive; */
     text-shadow: 4px 4px 4px black;
     color: white;
     font-weight: 600;
@@ -196,7 +199,6 @@
     border-right: 2px solid black;
     margin: 0 auto;
     letter-spacing: .05em;
-
 }
 
 .insta:hover {
@@ -237,13 +239,32 @@
     background: white;
 }
 
-.servicesImg{
-    transition: 0.5s all ease-in-out;
-    border-radius: 10px;
+.fullscreen{
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: #000000a1;
+    display: none;
+    z-index: 2;
 }
 
-.servicesImg:hover{
-    transform: scale(1.01);
+.fullscreen img:nth-child(1){
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen img:nth-child(2)
+{
+    position: fixed;
+    top: 130px;
+    height: 25px;
+    right: 30px;
+    filter: invert(1);
+    width: fit-content;
+    cursor: pointer;
 }
 
 /* Animations */
@@ -326,3 +347,12 @@
 
 
 /* about us css  */
+
+
+.carousel-indicators [data-bs-target] {
+    border: 2px;
+    border-radius: 100px;
+    height: 10px;
+    width: 10px;
+    color: black;
+}

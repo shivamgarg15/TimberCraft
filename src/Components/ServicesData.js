@@ -1,30 +1,38 @@
-import img from '../Images/home1.jpg';
-import img2 from '../Images/about1.jpg';
-import img3 from '../Images/contact1.jpg';
+const mk = require.context('../Images/serviceImages/modularKitchen', false);
+const bt = require.context('../Images/serviceImages/bathRoom', false);
+const fg = require.context('../Images/serviceImages/furnitureGoods', false);
+const lr = require.context('../Images/serviceImages/livingRoom', false);
+const br = require.context('../Images/serviceImages/bedRoom', false);
+const mkList = mk.keys().map(element => mk(element));
+const btList = bt.keys().map(element => bt(element));
+const fgList = fg.keys().map(element => fg(element));
+const lrList = lr.keys().map(element => lr(element));
+const brList = br.keys().map(element => br(element));
 
-const images = {
-    
-        "kitchen": [
-            img,img,img,img
-        ]
-    ,
+const images = [
 
-        "interior": [
-            img2,img2,img2,img2
-        ]
+    lrList,
+
+    brList,
+
+    btList,
+
+    fgList,
+
+    mkList,
+]
+
+const names = [
+
+    "Living Room"
     ,
-    
-        "furniture": [
-            img3,img3,img3,img3
-        ]
+    "Bedroom"
     ,
-        "Elevation": [
-            img,img,img,img
-        ]
+    "Bathroom"
     ,
-       "Work Space": [
-            img,img,img,img
-        ]
-,
-}
-export default images
+    "Furniture Goods"
+    ,
+    "Modular Kitchen"
+
+]
+export { images, names };

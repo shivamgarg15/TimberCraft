@@ -51,37 +51,37 @@ function About() {
             <Fade left delay={100}>
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>DESIGN PHILOSOPHY</h3>
-                <img src={design6} alt="" />
+                <img className="gridbox-img" src={design6} alt="" />
                 <p><b>TimberCraft</b> enables us to bring the design of your dreams to life!</p>
                 </div>
 
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>QUALITY AND CRAFTSMANSHIP</h3>
-                <img src={design3} alt="" />
+                <img className="gridbox-img" src={design3} alt="" />
                 <p>We construct with the same care and attention as if it were our own home. </p>
               </div>
 
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>EXTERIOR</h3>
-                <img src={design5} alt="" />
+                <img className="gridbox-img" src={design5} alt="" />
                 <p>Create an enchanting oasis with our exquisite furniture collection, transforming your space beautifully.</p>
                </div>
 
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>DECORATION</h3>
-                <img src={design4} alt="" />
+                <img className="gridbox-img" src={design4} alt="" />
                 <p>Enhance your space with our unmatched, stylish decor selection.</p>
                 </div>
 
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>INTERIOR PLANNING</h3>
-                <img src={design2} alt="" />
+                <img className="gridbox-img" src={design2} alt="" />
                 <p>Unleash the potential of interior planning and exceptional furniture with <b>TimberCraft!</b></p>
                  </div>
 
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>STYLE SELECTION</h3>
-                <img src={design1} alt="" />
+                <img className="gridbox-img" src={design1} alt="" />
                 <p>Craft a distinct and harmonious atmosphere in your home with our exceptional furniture choices.</p>
                 </div>
             </Fade>

@@ -18,7 +18,7 @@ function About() {
           <div className='container boxShadow body1Column' style={{ width: "90%" }}>
             <h1 className='text-center'>About Us</h1>
             <p>
-              Welcome to our store <b>TimberCraft!</b> We are passionate about helping people create beautiful and functional homes with our wide range of furniture and interior designs.
+              <p>Welcome to our store <b>TimberCraft!</b> We are passionate about helping people create beautiful and functional homes with our wide range of furniture and interior designs.</p>
 
               We offer a wide variety of styles and designs, from classic to modern, to fit every taste and budget.
 
@@ -26,26 +26,21 @@ function About() {
 
               Our commitment to quality is also reflected in our product selection. We only work with trusted manufacturers and brands that share our values of quality, durability, and sustainability. Whether you're looking for a new sofa, bedroom furniture, or interior of your home you can rest assured that every piece has been carefully selected for its quality and craftsmanship.
 
-              Thank you for choosing our store for your pleasing needs. We are excited to be a part of your home decor journey!
+             <p> Thank you for choosing our store for your pleasing needs. We are excited to be a part of your home decor journey!</p>
             </p>
           </div>
         </Fade>
 
         <Fade right duration={1500}>
-          <div className='container boxShadow body1Column my-5' style={{ width: "90%" }}>
+          <div className='container boxShadow body1Column my-5' style={{ width: "90%" }} >
+          
             <h1 className='text-center'>Brand Story</h1>
             <p>
-              Our brand started with a simple idea: to create furniture that blends form and function seamlessly. We wanted to design pieces that were not only beautiful, but also practical and comfortable.
+             <p>In the heart of our workshop, where creativity thrives, <b>Timbercraft</b> was born. With a passion for exceptional furniture and breathtaking interior design, we set out to redefine the way people experience their living spaces.</p>
+            <p>Drawing inspiration from the beauty of nature, we meticulously handcraft each piece with love and attention to detail. From the sturdy structure to the smallest finishing touches, our artisans pour their heart and soul into every creation.</p>
 
-              Our journey began in a small workshop, where we crafted our first pieces of furniture by hand. We poured our hearts and souls into every piece, paying attention to even the smallest details.
-
-              As word of our quality and craftsmanship spread, our brand began to grow. We hired more artisans and expanded our workshop, but we never lost sight of our original vision. We continued to design and build furniture that reflected our values of beauty, functionality, and durability.
-
-              Today, we are proud to offer a wide range of furniture for every room in your home. From cozy armchairs to sleek coffee tables, we have something for every taste and style. And even as our brand has grown, we have remained committed to our craft. We still make many of our pieces by hand, using only the finest materials and techniques.
-
-              At the heart of our brand is a passion for furniture and design. We believe that great furniture can transform a space and elevate everyday life. And we are committed to helping our customers create homes that are both beautiful and functional.
-
-              Thank you for choosing our brand. We hope that our furniture brings you joy and comfort for many years to come.
+            <p><b>Timbercraft</b> is more than just furniture; it's a journey. We believe that your home should be a reflection of your unique style and personality. Our collections, carefully curated and thoughtfully designed, offer a harmonious blend of elegance, functionality, and comfort.</p>
+            <p>Step into the world of <b>Timbercraft</b>, where dreams take shape and spaces come alive. Let us help you transform your home into a sanctuary that evokes joy, relaxation, and inspiration. Discover the artistry and craftsmanship that make Timbercraft a symbol of excellence in furniture and interior design. Welcome to <b>Timbercraft</b>, where your vision becomes a masterpiece.</p>
             </p>
           </div>
         </Fade>

@@ -50,7 +50,7 @@ function Contact(props) {
             </div>
             <div className="mb-3">
               <label htmlFor="message" className="form-label">Your Message</label>
-              <textarea type="text" rows={5} className="form-control" name="Message" id="exampleInputMessage1" style={{ resize: "none" }} placeholder='Write your message here' required />
+              <textarea type="text" rows={5} className="form-control" name="Message" id="exampleInputMessage1" style={{ resize: "none" }} placeholder="Send us a message and we'll get back to you as soon as we can." required />
             </div>
             <button type="submit" className="btn btn-success">Submit</button>
           </form>

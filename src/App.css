@@ -163,6 +163,18 @@ a{
     border-radius: 10px;
 }
 
+.boxShadow img{
+    height: 170px;
+    width: 170px;
+}
+
+.boxShadow p{
+    font-size: 20px;
+}
+
+
+
+
 .primary-font {
     font-family: 'Titillium Web', sans-serif;
     font-size: 26px;

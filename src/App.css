@@ -388,3 +388,8 @@ a{
     width: 10px;
     color: black;
 }
+
+.react-multiple-carousel__arrow
+{
+    z-index: 1!important;
+}

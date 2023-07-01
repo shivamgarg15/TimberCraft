@@ -18,7 +18,7 @@ function About() {
           <div className='container boxShadow body1Column' style={{ width: "90%" }}>
             <h1 className='text-center'>About Us</h1>
             <p>
-              <p>Welcome to our store <b>TimberCraft!</b> We are passionate about helping people create beautiful and functional homes with our wide range of furniture and interior designs.</p>
+              <p>Welcome to our store <b>The TimberCraft!</b> We are passionate about helping people create beautiful and functional homes with our wide range of furniture and interior designs.</p>
 
               We offer a wide variety of styles and designs, from classic to modern, to fit every taste and budget.
 
@@ -36,11 +36,11 @@ function About() {
           
             <h1 className='text-center'>Brand Story</h1>
             <p>
-             <p>In the heart of our workshop, where creativity thrives, <b>Timbercraft</b> was born. With a passion for exceptional furniture and breathtaking interior design, we set out to redefine the way people experience their living spaces.</p>
+             <p>In the heart of our workshop, where creativity thrives, <b>The TimberCraft</b> was born. With a passion for exceptional furniture and breathtaking interior design, we set out to redefine the way people experience their living spaces.</p>
             <p>Drawing inspiration from the beauty of nature, we meticulously handcraft each piece with love and attention to detail. From the sturdy structure to the smallest finishing touches, our artisans pour their heart and soul into every creation.</p>
 
-            <p><b>Timbercraft</b> is more than just furniture; it's a journey. We believe that your home should be a reflection of your unique style and personality. Our collections, carefully curated and thoughtfully designed, offer a harmonious blend of elegance, functionality, and comfort.</p>
-            <p>Step into the world of <b>Timbercraft</b>, where dreams take shape and spaces come alive. Let us help you transform your home into a sanctuary that evokes joy, relaxation, and inspiration. Discover the artistry and craftsmanship that make Timbercraft a symbol of excellence in furniture and interior design. Welcome to <b>Timbercraft</b>, where your vision becomes a masterpiece.</p>
+            <p><b>The TimberCraft</b> is more than just furniture; it's a journey. We believe that your home should be a reflection of your unique style and personality. Our collections, carefully curated and thoughtfully designed, offer a harmonious blend of elegance, functionality, and comfort.</p>
+            <p>Step into the world of <b>The TimberCraft</b>, where dreams take shape and spaces come alive. Let us help you transform your home into a sanctuary that evokes joy, relaxation, and inspiration. Discover the artistry and craftsmanship that make The TimberCraft a symbol of excellence in furniture and interior design. Welcome to <b>The TimberCraft</b>, where your vision becomes a masterpiece.</p>
             </p>
           </div>
         </Fade>
@@ -52,7 +52,7 @@ function About() {
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>DESIGN PHILOSOPHY</h3>
                 <img className="gridbox-img" src={design6} alt="" />
-                <p><b>TimberCraft</b> enables us to bring the design of your dreams to life!</p>
+                <p><b>The TimberCraft</b> enables us to bring the design of your dreams to life!</p>
                 </div>
 
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
@@ -76,7 +76,7 @@ function About() {
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>
                 <h3 style={{ textDecoration: "underline" }}>INTERIOR PLANNING</h3>
                 <img className="gridbox-img" src={design2} alt="" />
-                <p>Unleash the potential of interior planning and exceptional furniture with <b>TimberCraft!</b></p>
+                <p>Unleash the potential of interior planning and exceptional furniture with <b>The TimberCraft!</b></p>
                  </div>
 
               <div className="col-10 col-md-5 col-xl-3 boxShadow my-3 mx-4 p-3" style={{ minHeight: "400px" }}>

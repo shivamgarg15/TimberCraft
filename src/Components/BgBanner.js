@@ -58,7 +58,7 @@ function BgBanner(props) {
         <span className="visually-hidden">Next</span>
       </button>
       <div className="nameAnimation" onAnimationIteration={(element)=>{changeText(element)}}> <div>{props.txt[0]}</div>
-      {/* <div>Design your dream</div> */}
+      {/* <div>Design your dreamfuu7</div> */}
       </div>
     </div>
   )

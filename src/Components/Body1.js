@@ -41,7 +41,7 @@ function Body1() {
                             <div style={{ color: "maroon" }}>Service</div>
                         </div>
                         <div className="col-12 col-md-4 col-lg-3 mx-4 my-3 body1Column ">
-                            <p>TimberCraft aims at providing an unparallel experience to the customers with the help of our Beautiful & Creative Designs and an unmatched customer service with bunch of customizations available for all the furniture products present in our iventory.</p>
+                            <p>The TimberCraft aims at providing an unparallel experience to the customers with the help of our Beautiful & Creative Designs and an unmatched customer service with bunch of customizations available for all the furniture products present in our iventory.</p>
                             <Link to="/about" className='text-danger'>Read More About Us</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg-3 mx-4 my-3 body1Column ">

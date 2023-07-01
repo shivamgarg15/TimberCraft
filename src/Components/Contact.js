@@ -1,27 +1,53 @@
-import React from 'react'
+// import React from 'react'
 import Fade from 'react-reveal/Fade';
+import React, { useState } from 'react';
+import axios from 'axios';
 
-function Contact(props) {
+// function Contact(props) {
 
-  const handleForm = (event) => {
+//   const handleForm = (event) => {
+//     event.preventDefault();
+//     const form = document.forms['The The TimberCraft'];
+//     const sheet = process.env.REACT_APP_GOOGLE;
+//     fetch(sheet, { method: 'post', body: new FormData(form) })
+//       .then(response => {
+//         console.log("Form filled");
+//         form.Name.value = "";
+//         form.Email.value = "";
+//         form.Phone.value = "";
+//         form.Subject.value = "";
+//         form.Message.value = "";
+//         props.showAlert("Form filled successfully","success");
+//       })
+//       .catch(error => {
+//         console.log(error);
+//         props.showAlert("An error occured","danger");
+//       });
+//   }
+
+
+const App = () => {
+  const [formData, setFormData] = useState({});
+
+  const handleSubmit = (event) => {
     event.preventDefault();
-    const form = document.forms['timberCraft'];
-    const sheet = process.env.REACT_APP_GOOGLE;
-    fetch(sheet, { method: 'post', body: new FormData(form) })
-      .then(response => {
-        console.log("Form filled");
-        form.Name.value = "";
-        form.Email.value = "";
-        form.Phone.value = "";
-        form.Subject.value = "";
-        form.Message.value = "";
-        props.showAlert("Form filled successfully","success");
+
+    const data = {
+      Name: formData.name,
+      Email: formData.email,
+      Phone: formData.phone,
+      Subject: formData.subject,
+      Message: formData.message,
+    };
+
+    axios.post('https://script.google.com/macros/s/AKfycbxWKlMLKYXDe1vx87Iph9cDcCiyniQjOwEXkO8u1y3EC1rG9m1gpe4rsNfX03shBIvg/exec', data)
+      .then((response) => {
+        console.log('Form data submitted successfully!');
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
-        props.showAlert("An error occured","danger");
       });
-  }
+  };
 
   return (
     <div style={{ backgroundColor: "white" }}>
@@ -31,26 +57,31 @@ function Contact(props) {
           <div className="text-center mb-4" style={{ textDecoration: "underline", fontSize: "30px" }}>Write your queries</div>
         </Fade>
         <Fade bottom>
-          <form name="timberCraft" method='post' onSubmit={handleForm}>
+          <form name="The The TimberCraft" method='post' onSubmit={handleSubmit}>
             <div className="mb-3">
-              <label htmlFor="name" className="form-label">Full Name</label>
-              <input type="text" className="form-control rounded-pill" name="Name" id="exampleInputName1" required />
+              <label htmlFor="name" className="form-label">Name</label>
+              <input type="text" className="form-control rounded-pill" name="Name" id="exampleInputName1" required  value={formData.Name}
+          onChange={(e) => setFormData({ ...formData, Name: e.target.value })} />
             </div>
             <div className="mb-3">
-              <label htmlFor="email" className="form-label">Email address</label>
-              <input type="email" className="form-control rounded-pill" name="Email" id="exampleInputEmail1" required />
+              <label htmlFor="email" className="form-label">Email</label>
+              <input type="email" className="form-control rounded-pill" name="Email" id="exampleInputEmail1" required  value={formData.Email}
+          onChange={(e) => setFormData({ ...formData, Email: e.target.value })} />
             </div>
             <div className="mb-3">
-              <label htmlFor="phone" className="form-label">Phone no.</label>
-              <input type="phone" className="form-control rounded-pill" name="Phone" id="exampleInputPhon1" required />
+              <label htmlFor="phone" className="form-label">Phone</label>
+              <input type="phone" className="form-control rounded-pill" name="Phone" id="exampleInputPhon1" required  value={formData.phone}
+          onChange={(e) => setFormData({ ...formData, Phone: e.target.value })} />
             </div>
             <div className="mb-3">
               <label htmlFor="subject" className="form-label">Subject</label>
-              <input type="text" className="form-control rounded-pill" name="Subject" id="exampleInputSubject1" required />
+              <input type="text" className="form-control rounded-pill" name="Subject" id="exampleInputSubject1" required  value={formData.Subjet}
+          onChange={(e) => setFormData({ ...formData, Subject: e.target.value })}/>
             </div>
             <div className="mb-3">
-              <label htmlFor="message" className="form-label">Your Message</label>
-              <textarea type="text" rows={5} className="form-control" name="Message" id="exampleInputMessage1" style={{ resize: "none" }} placeholder="Send us a message and we'll get back to you as soon as we can." required />
+              <label htmlFor="message" className="form-label">Message</label>
+              <textarea type="text" rows={5} className="form-control" name="Message" id="exampleInputMessage1" style={{ resize: "none" }} placeholder="Send us a message and we'll get back to you as soon as we can." required  value={formData.Message}
+          onChange={(e) => setFormData({ ...formData, Message: e.target.value })} />
             </div>
             <button type="submit" className="btn btn-success">Submit</button>
           </form>
@@ -62,4 +93,4 @@ function Contact(props) {
   )
 }
 
-export default Contact
+export default App

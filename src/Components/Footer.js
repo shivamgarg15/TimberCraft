@@ -22,9 +22,9 @@ function Footer() {
                         </div>
                     </div>
                     <div className="col-11 col-md-5 col-lg-3 mx-4 my-3">
-                        <div className='fHead'>TimberCraft</div>
+                        <div className='fHead'>The TimberCraft</div>
                         <div className="fColumn">
-                            <div>Step inside the doors of Timbercraft, you'll encounter a mesmerizing exhibition of furniture and interior concepts, seamlessly combining  the finest materials, awaiting your admiration.</div>
+                            <div>Step inside the doors of The TimberCraft, you'll encounter a mesmerizing exhibition of furniture and interior concepts, seamlessly combining  the finest materials, awaiting your admiration.</div>
                         </div>
                     </div>
                     <div className="col-11 col-md-11 col-lg-3 mx-4 my-3">
@@ -47,7 +47,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                <div className='text-center my-2'>Copyright © 2023 TimberCraft Co. All rights reserved.</div>
+                <div className='text-center my-2'>Copyright © 2023 The TimberCraft Co. All rights reserved.</div>
                 </div>
             </div>
         </footer>

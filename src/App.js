@@ -45,8 +45,8 @@ function App() {
       <Navbar scrollToTop={scrollToTop} alert={alert} />
       <Routes >
 
-        <Route exact path='/' element={<><BgBanner key={1} img={[h1,h2,h3]} txt={["TimberCraft","Design Your Dreams"]}/><Body1 /><CounterUp/></>} />
-        <Route exact path='/home' element={<><BgBanner key={1} img={[h1,h2,h3]} txt={["TimberCraft","Design Your Dreams"]}/><Body1 /><CounterUp/></>} />
+        <Route exact path='/' element={<><BgBanner key={1} img={[h1,h2,h3]} txt={["The TimberCraft","Design Your Dreams"]}/><Body1 /><CounterUp/></>} />
+        <Route exact path='/home' element={<><BgBanner key={1} img={[h1,h2,h3]} txt={["The TimberCraft","Design Your Dreams"]}/><Body1 /><CounterUp/></>} />
         <Route exact path='/about' element={<><BgBanner key={2} img={[a1,a2,a3]} txt={["We Build Trust","Live In Future"]}/><About /></>} />
         <Route exact path='/services' element={<><BgBanner key={3} img={[a1,a2,a3]} txt={["Ultimate Designs","Affordable Prices"]}/><Services /></>} />
         <Route exact path='/contact' element={<><BgBanner key={4} img={[c1,c2,c3]} txt={["Raise Your Queries","Feel Free To Ask"]}/><Contact showAlert={showAlert} /></>} />
